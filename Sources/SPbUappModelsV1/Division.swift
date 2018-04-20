@@ -13,9 +13,15 @@ public struct Division: Codable {
 
     public var fieldOfStudy: String
 
-    public init(id: DivisionID, divisionName: String, fieldOfStudy: String) {
+    public var type: DivisionType
+
+    public init(id: DivisionID,
+                divisionName: String,
+                fieldOfStudy: String,
+                type: DivisionType) {
         self.id = id
         self.divisionName = divisionName
         self.fieldOfStudy = fieldOfStudy
+        self.type = type
     }
 }
