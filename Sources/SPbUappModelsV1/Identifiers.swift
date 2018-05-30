@@ -57,3 +57,30 @@ public struct DivisionID: SPbUIdentifier {
         self.rawValue = rawValue
     }
 }
+
+public struct StudyForm: SPbUIdentifier {
+
+    public var rawValue: String
+
+    public init(rawValue: String) {
+        self.rawValue = rawValue
+    }
+
+    static let fullTime = StudyForm(rawValue: "очная")
+
+    static let partTime = StudyForm(rawValue: "очно-заочная")
+
+    static let distance = StudyForm(rawValue: "заочная")
+
+    static let individual =
+        StudyForm(rawValue: "по индивидуальным формам обучения")
+
+    static let withJobInterruption =
+        StudyForm(rawValue: "с отрывом от работы")
+
+    static let withoutJobInterruption =
+        StudyForm(rawValue: "без отрыва от работы")
+
+    static let partialJobInterruption =
+        StudyForm(rawValue: "с частичным отрывом от работы")
+}
