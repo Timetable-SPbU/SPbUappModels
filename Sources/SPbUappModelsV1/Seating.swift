@@ -11,14 +11,3 @@ public enum Seating: String, Codable, CaseIterable {
     case amphitheater
     case roundtable
 }
-
-#if swift(>=4.2)
-#else
-extension Seating {
-    public static var allCases: [Seating] = [
-        .theater,
-        .amphitheater,
-        .roundtable
-    ]
-}
-#endif

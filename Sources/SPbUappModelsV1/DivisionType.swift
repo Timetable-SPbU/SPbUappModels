@@ -12,16 +12,3 @@ public enum DivisionType: String, Codable, CaseIterable {
     case faculty
     case institute
 }
-
-#if swift(>=4.2)
-#else
-extension DivisionType {
-    public static var allCases: [DivisionType] = [
-        .highSchool,
-        .colledge,
-        .higherSchool,
-        .faculty,
-        .institute
-    ]
-}
-#endif

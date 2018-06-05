@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:4.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -10,5 +10,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "SPbUappModelsV1", dependencies: []),
-    ]
+    ],
+    swiftLanguageVersions: [.v4_2]
 )
